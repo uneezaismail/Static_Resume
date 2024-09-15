@@ -95,14 +95,12 @@ body {
    font-weight: 600; 
    font-size: 5rem; 
    width: 60%;
-   margin: 20px 0px 0px 0px;
    text-transform: uppercase;
-   padding: 20px 0px 10px 20px;
    display: flex;
    justify-content: flex-start;
    position: relative;
-   right:15%;
-
+   margin-top: 10%;
+   right: 15%;
 }
 
 .fname::after {
@@ -297,34 +295,37 @@ border-color: #000000;
    }
 }
 
-@media (max-width: 768px) {
-   #left-div, #right-div {
-      width: 50%; 
+@media (min-width: 500px)  and (max-width: 800px) {
+   #left-div {
+      width: 40%; 
 box-sizing: border-box;   
 }
+#right-div{
+   width: 50%; 
 
+}
  
    .fname::after {
       content: '';
       position: absolute;
       bottom: 0;
-      left: 15%;
-      width: 150%; 
-      height: 5px; 
+      left: 2%;
+      width: 130%; 
+      height: 10%; 
       background-color: black;
     }
    
    .fname{
       font-size: 2rem;
       position: relative;
-      right: 20%;
+      right: 10%;
    }
 
    .lname{
       font-size: 1.6rem;
       position: relative;
-      right: 10%;
-
+      right: 8%;
+letter-spacing: 5px;
    }
 
    .about, .skill, .contact {
@@ -347,6 +348,8 @@ box-sizing: border-box;
       width: 100%;
       font-size: 0.9rem; 
       margin-top: 15%;
+      position: relative;
+      top: 10%;
    }
 
    .edu{
@@ -355,23 +358,119 @@ box-sizing: border-box;
    .title, .degree {
       font-size: 0.8rem; 
       margin-left: 2%;
+      position: relative;
+      top: 10%;
    }
 
    .c-name, .schl {
       font-size: 0.8rem; 
       margin-left: 2%;
-
+      position: relative;
+      top: 10%;
    }
 
    .my-exp, .study {
       font-size: 0.8rem; 
-      line-height: 15px;
+      line-height: 100%;
       margin-left: 2%;
+      position: relative;
+      top: 10%;
    }
 
-   .study{
-      margin-bottom: 50px;
+   
+   .img {
+      max-width: 70%;
+      margin-left: 10%;
+      margin-right: 10%;
+      
    }
+}
+
+
+
+ 
+
+ 
+@media (max-width: 500px) {
+   #left-div, #right-div {
+      width: 50%; 
+box-sizing: border-box;   
+}
+
+ 
+   .fname::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 2%;
+      width: 130%; 
+      height: 10%; 
+      background-color: black;
+    }
+   
+   .fname{
+      font-size: 2rem;
+      position: relative;
+      right: 10%;
+   }
+
+   .lname{
+      font-size: 1.6rem;
+      position: relative;
+      right: 8%;
+letter-spacing: 5px;
+   }
+
+   .about, .skill, .contact {
+      font-size: 1.2rem;
+   }
+
+   .me, .sk {
+      font-size: 0.9rem;
+   line-height: 20px;
+
+   }
+
+  
+   #phone {
+      font-size: 0.9rem;
+      width: 100%;
+   }
+
+   .exp, .edu {
+      width: 100%;
+      font-size: 0.9rem; 
+      margin-top: 15%;
+      position: relative;
+      top: 10%;
+   }
+
+   .edu{
+      margin-top: 10%;
+   }
+   .title, .degree {
+      font-size: 0.8rem; 
+      margin-left: 2%;
+      position: relative;
+      top: 10%;
+   }
+
+   .c-name, .schl {
+      font-size: 0.8rem; 
+      margin-left: 2%;
+      position: relative;
+      top: 10%;
+   }
+
+   .my-exp, .study {
+      font-size: 0.8rem; 
+      line-height: 100%;
+      margin-left: 2%;
+      position: relative;
+      top: 10%;
+   }
+
+   
    .img {
       max-width: 70%;
       margin-left: 10%;
