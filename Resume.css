@@ -136,30 +136,28 @@ body {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-size: 1.8rem; 
    width: 90%;
-   margin: 10px auto;
    text-align: center;
    background-color: #000000;
    border-top: 1px solid white;
    border-bottom: 1px solid white;
-   padding: 5px 0;
-   margin-top: 50px;
-   margin-bottom: 30px;
-}
-
-#toggle{
-   background-color: #000000;
-   border-top: 1px solid white;
-   border-bottom: 1px solid white;
-   width: 90%;
+   padding: 2% 0;
+   margin-top: 20%;
+   margin-bottom:5%;
+   margin-left: 5%;
+   margin-right: 5%;
 
 }
+
+
 .me, .sk {
    color: white;
    text-align: start;
    font-size: 1.3rem; 
-   margin: 10px 20px;
-   line-height: 25px;
-   padding-top: 20px;
+   /* margin: 10px 20px; */
+   margin-left: 5%;
+   margin-right: 5%;
+   line-height: 95%;
+   padding-top: 10%;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -181,7 +179,7 @@ body {
    border-radius: 5px;
    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
    font-size: 1rem;
-   margin-bottom: 10px;
+   margin-bottom: 5%;
    line-height: 10px;
 }
 
@@ -192,7 +190,7 @@ body {
    margin: 15px auto;
    border-bottom: 1px solid gray;
    text-align: left;
-   margin-top: 70px; 
+   margin-top: 12%; 
 }
 
 .title, .degree {
@@ -220,9 +218,8 @@ body {
    width: 90%;
    margin: 10px auto;
    text-align: start;
-   line-height: 30px;
-   margin-top:40px;
-   /* font-family: Georgia, 'Times New Roman', Times, serif; */
+   line-height: 85%;
+   margin-top: 10%;
 }
 
 #toggle {
@@ -233,11 +230,15 @@ body {
    color: #fff7f7;
    cursor: pointer;
    background-color: #000000;
-   margin: 40px 20px 0px 30px;
    align-items: center;
    position: relative;
    transform: o.3s;
    border-color: #fff;
+   margin-left: 10%;
+   margin-top: 20%;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+
 }
 
 #toggle:hover{
@@ -307,55 +308,65 @@ box-sizing: border-box;
       content: '';
       position: absolute;
       bottom: 0;
-      left: 10%;
-      width: 160%; 
+      left: 15%;
+      width: 150%; 
       height: 5px; 
       background-color: black;
     }
    
    .fname{
-      font-size: 3.5rem;
+      font-size: 2rem;
       position: relative;
-      right: 25%;
+      right: 20%;
    }
 
    .lname{
-      font-size: 2rem;
+      font-size: 1.6rem;
+      position: relative;
+      right: 10%;
+
    }
 
    .about, .skill, .contact {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
    }
 
    .me, .sk {
-      font-size: 1rem;
-   line-height: 25px;
+      font-size: 0.9rem;
+   line-height: 20px;
 
    }
 
+  
    #phone {
-      font-size: 1.4rem;
+      font-size: 0.9rem;
+      width: 100%;
    }
 
    .exp, .edu {
-      font-size: 1.6rem; 
-      margin-top: 100px;
+      width: 100%;
+      font-size: 0.9rem; 
+      margin-top: 15%;
    }
 
    .edu{
       margin-top: 10%;
    }
    .title, .degree {
-      font-size: 1.4rem; 
+      font-size: 0.8rem; 
+      margin-left: 2%;
    }
 
    .c-name, .schl {
-      font-size: 1.2rem; 
+      font-size: 0.8rem; 
+      margin-left: 2%;
+
    }
 
    .my-exp, .study {
-      font-size: 1.2rem; 
-      line-height: 25px;
+      font-size: 0.8rem; 
+      line-height: 15px;
+      margin-left: 2%;
    }
 
    .study{
@@ -363,8 +374,8 @@ box-sizing: border-box;
    }
    .img {
       max-width: 70%;
-      margin-left: 40px;
-      margin-right: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
       
    }
 }
