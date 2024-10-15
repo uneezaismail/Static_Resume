@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Resume.css" />
+  </head>
+  <body>
+    <h1 id="top">STATIC RESUME</h1>
+    <div id="main-div">
+      <div id="left-div">
+        <div id="img-div">
+        <img class="img" src="https://img.freepik.com/premium-photo/beautiful-woman-beauty_811396-8281.jpg?w=360" alt="" />
+      </div>
+      
+        <h3 class="about">ABOUT ME</h3>
+ 
+        <p class="me">
+          I am a dedicated student at GIAIC, passionate about technology and programming. I enjoy learning and applying new technologies to create innovative solutions. My strong problem-solving skills, attention to detail, and enthusiasm for learning drive my growth as a programmer. 
+        </p>
+
+        <button id="toggle" onclick="toggleSkillDiv()">
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div id="skill-div">
+          <h3 class="skill">SKILLS</h3>
+          <ul class="sk">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>TYPESCRIPT</li>
+            <li>Tailwind CSS</li>
+            <li>REACT</li>
+            <li>NEXT.JS</li>
+          </ul>
+        </div>
+
+        <h3 class="contact">CONTACT</h3>
+        <br />
+        <div  id="phone">
+        
+          <p class="contact-me"> <i class="fa-solid fa-phone"></i>03484577856</p>
+        
+        
+       
+          <p class="contact-me"> <i class="fa-solid fa-envelope"></i>ismailrahet@gmail.com</p>
+       
+        
+         
+          <p class="contact-me"> <i class="fa-solid fa-location-dot"></i>Mirpurkhas, Pakistan</p>
+       
+      </div>
+    </div>
+
+      <div id="right-div">
+        <h1 class="fname">Babar</h1>
+        <h2 class="lname">Azam</h2>
+        <div>
+          <h3 class="exp">WORK EXPERIENCE</h3>
+
+          <h5 class="title">Front-End Developer</h5>
+          <h5 class="c-name">
+            Tech Innovations Inc.,New York<span
+              style="color: black; margin-left: 25px"
+              >(2021 – Present)</span
+            >
+          </h5>
+
+          <ul class="my-exp">
+            <li>
+              Collaborated with UX/UI designers to implement user-friendly
+              interfaces and enhance user experience.
+            </li>
+            <li>
+              Improved website load times by 40% through code optimization and
+              efficient use of assets.
+            </li>
+            <li>
+              Led the migration of legacy systems to modern frameworks,
+              resulting in a 20% increase in development speed.
+            </li>
+          </ul>
+        </div>
+        <br />
+        <div>
+          <h3 class="edu">EDUCATION</h3>
+          <h5 class="degree">Masters in Software Engineering</h5>
+          <h5 class="schl">
+            University of Lahore, Pakistan
+            <span style="color: black; margin-left: 25px">(2018 – 2020)</span>
+          </h5>
+
+          <ul class="study">
+            <li>
+              <b style="color: black; margin-right: 25px"
+                >Relevant Coursework:</b
+              >
+              Data Structures, Algorithms, Web Development, Database Management.
+            </li>
+            <br />
+            <li>
+              <b style="color: black; margin-right: 25px">Achievements:</b>
+              Graduated with Honors, Dean’s List (2014, 2015), Capstone Project:
+              Developed a web application for local businesses.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./Resume.js"></script>
+</html>

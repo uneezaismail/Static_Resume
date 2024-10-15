@@ -1,0 +1,684 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body {
+   background-color: #d1d8da;
+   border-bottom: #303041;
+}
+
+#top {
+   background-color: #303041;
+   text-align: center;
+   width: 100%;
+   height: 2.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 1.5rem;
+   color: #d1d8da;
+   letter-spacing: 2px;
+   font-size: 1.5rem;
+}
+
+#main-div {
+   display: flex;
+   justify-content: center;
+   border-radius: 3px;
+   position: relative;
+   padding: 1rem;
+   flex-wrap: wrap;
+}
+
+#main-div::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 300px;
+   background-color: #303041;
+   clip-path: polygon(0 100%, 100% 100%, 0 0); 
+   z-index: -1; 
+}
+
+#left-div, #right-div {
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   margin-bottom: 5rem;
+}
+
+#left-div {
+   background-color: #616163 ;
+   height: auto;
+   width: 40%;
+   max-width: 300px;
+   border: none;
+   margin-right: 0;
+   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#right-div {
+   background-color:  #d1d8da;
+   height: auto;
+   width: 48%;
+   max-width: 550px;
+   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.3);
+   margin-left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+}
+
+#img-div{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.img {
+   width: 80%;
+   height: 70%;
+   border: 2px solid black;
+   border-radius: 50%;
+}
+
+
+#left-div-data{
+   background-color: #7c6565;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 1rem;
+   width: 100%;
+}
+
+.about, .skill,  .contact {
+   color: #B68F40;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   width: 90%;
+   font-size: 1.5rem;
+   margin: 20px auto;
+   text-align: center;
+   background-color: #000000;
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+   padding: 5px 0;
+   margin-bottom: 1rem;
+}
+
+
+.me, .sk {
+   padding: 1rem;
+   color: white;
+   text-align: start;
+   font-size: 1.3rem; 
+   line-height: 20px;
+   padding-top: 1rem;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sk{
+   margin-bottom: 1rem;
+   margin-left: 7%;
+   line-height: 2rem;
+   font-size: 1.5rem;
+}
+
+#phone {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;  
+   
+}
+
+.contact-me{
+   display: flex;
+   background-color: white;
+   color: rgb(0, 0, 0);
+   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+   margin: 2px auto;
+   border-radius: 5px;
+   font-size: 1rem;
+   margin-bottom: 5px;
+   padding: 5px;
+   width: 90%;
+}
+
+.fname {
+   color: #111b07;
+   font-style: italic;
+   font-family: sans-serif;
+   font-weight: 600; 
+   font-size: 5rem; 
+   width: 60%;
+   margin: 20px 0px 0px 0px;
+   text-transform: uppercase;
+   padding: 20px 0px 10px 20px;
+   display: flex;
+   justify-content: flex-start;
+   position: relative;
+   right:15%;
+   
+}
+.fname::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 5%; 
+   width: 100%; 
+   height: 5px; 
+   background-color: black;
+}
+
+
+.lname {
+   color: #111b07;
+   font-style: italic;
+   font-family: fantasy;
+   font-weight: 80; 
+   font-size: 3rem; 
+   width: 80%;
+   text-transform: capitalize;
+   text-align: center;
+   letter-spacing: 10px;
+   position: relative;
+   left: 10%;
+   
+}
+
+.fa-solid{
+   margin-right: 5%
+}
+.exp, .edu {
+   color: #222020;
+   font-size: 2.5rem; 
+   width: 90%;
+   margin: 15px auto;
+   border-bottom: 1px solid gray;
+   text-align: left;
+   margin-top: 70px; 
+}
+
+.title, .degree {
+   color: rgb(23, 84, 94);
+   font-size: 2rem; 
+   width: 90%;
+   margin: 10px auto;
+   text-align: left;
+}
+
+.c-name, .schl {
+   color: rgb(91, 89, 89);
+   font-size: 1.5rem;
+   width: 90%;
+   margin: 10px auto;
+   text-align: left;
+ font-style: oblique;
+
+}
+
+
+.my-exp, .study {
+   color: rgb(58, 53, 53);
+   font-size: 1.6rem; 
+   width: 90%;
+   margin: 10px auto;
+   text-align: start;
+   line-height: 30px;
+   margin-top:40px;
+ 
+}
+
+#toggle {
+   width: 80%;
+   border-radius: 20px;
+   justify-content: center;
+   font-size: 1rem;
+   color: #fff; 
+   cursor: pointer;
+   background-color: #303041; 
+   margin: 40px auto;
+   padding: 10px; 
+   display: flex; 
+   align-items: center;
+   transition: background-color 0.3s, color 0.3s; 
+   border: 2px solid transparent;
+}
+
+#toggle:hover {
+   background-color: #d1d8da; 
+   color: #000; 
+   border-color: #000; 
+}
+
+#skill-div {
+   display: none;
+   transition: max-height 0.5s ease; 
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+   #left-div, #right-div {
+      box-sizing: border-box;
+   }
+
+   #left-div {
+      height: auto;
+      width: 40%;
+      max-width: 300px;
+      
+      margin-right: 0;
+   
+   
+   }
+   
+   #right-div {
+      height: auto;
+      width: 48%;
+      max-width: 550px;
+      margin-left: 0;
+      padding: 20px;
+   }
+
+   .about, .skill, .contact {
+      font-size: 2rem; 
+      width: 85%;
+   }
+   
+
+   .me, .sk {
+      font-size: 1.2rem; 
+      line-height: 20px;
+      padding: 1.2rem;
+   }
+   
+   .sk{
+      margin-bottom: 1rem;
+      margin-left: 7%;
+      line-height: 2rem;
+      font-size: 1.5;
+   }
+
+   
+
+   .fname::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 140%; 
+      height: 5px; 
+      background-color: black;
+    }
+   
+   .fname{
+      font-size: 4.5rem;
+      position: relative;
+      right: 20%;
+   }
+
+   .lname{
+      font-size: 3rem;
+   }
+  #contact-heading,  .title, .degree, .c-name, .schl, .my-exp, .study {
+      font-size: 1.6rem;
+   }
+   .my-exp, .study {
+      font-size: 1.5rem; 
+      line-height: 25px;
+   }
+   .exp,.edu{
+      font-size: 2rem;
+      margin-top: 15%;
+   }
+   .contact-me{
+      font-size: 1rem;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 80%;
+   }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+   #left-div, #right-div {
+     
+      box-sizing: border-box;
+   }
+
+   #right-div {
+      margin-left: 0;
+   }
+
+   #left-div {
+      height: auto;
+      width: 30%; 
+      margin-right: 0;
+   
+   
+   }
+   
+   #right-div {
+      height: auto;
+      width: 50%; 
+      margin-left: 0;
+      padding: 20px;
+   }
+
+   #top {
+      width: 100%;
+      height: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+   }
+
+
+   .about, .skill, .contact {
+      font-size: 1.4rem; 
+      width: 90%;
+   }
+
+
+   .me, .sk {
+      font-size: 1rem; 
+      line-height: 1.2rem;
+      padding: 1rem;
+   }
+   
+   .sk{
+      margin-bottom: 1rem;
+      margin-left: 7%;
+      line-height: 2rem;
+      font-size: 1.5rem;
+   }
+
+   .contact-me{
+      font-size: small;
+      width: 90%;
+   }
+   
+   .fname::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 140%; 
+      height: 5px; 
+      background-color: black;
+    }
+   
+   .fname{
+      font-size: 4.5rem;
+      position: relative;
+      right: 20%;
+   }
+
+   .lname{
+      font-size: 3rem;
+   }
+ #contact-heading, .title, .degree, .c-name, .schl, .my-exp, .study {
+      font-size: 1.6rem;
+   }
+   .my-exp, .study {
+      font-size: 1.5rem; 
+      line-height: 25px;
+   }
+   .exp,.edu{
+      font-size: 2rem;
+      margin-top: 15%;
+   }
+
+ }
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+ 
+   #left-div, #right-div {
+     
+box-sizing: border-box;   
+}
+
+ 
+#left-div {
+   height: auto;
+   width: 30%; 
+   margin-right: 0;
+
+
+}
+
+#right-div {
+   height: auto;
+   width: 50%; 
+   margin-left: 0;
+   padding: 20px;
+}
+#top {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#img-div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  width: 80%;
+  height: 70%;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+   .fname::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 160%; 
+      height: 5px; 
+      background-color: black;
+    }
+   
+
+   .fname{
+      font-size: 3.5rem;
+      position: relative;
+      right: 25%;
+   }
+
+   .lname{
+      font-size: 2rem;
+   }
+
+   .about, .skill, .contact {
+      font-size: large; 
+      width: 85%;
+   }
+
+   .me, .sk {
+      font-size: small; 
+      line-height: 0.8rem;
+      padding: 0.5rem;
+   }
+   
+   .sk{
+      margin-bottom: 1rem;
+      margin-left: 10%;
+      line-height: 1.5rem;
+      font-size: 1.5;
+   }
+
+   #toggle {
+      width: 90%;
+      border-radius: 20px;
+      font-size: 1rem;
+      margin: 20px auto;
+      padding: 5px; 
+   }
+     
+
+   .exp, .edu {
+      font-size: 1.6rem; 
+      margin-top: 100px;
+   }
+
+   .edu{
+      margin-top: 10%;
+   }
+   .title, .degree {
+      font-size: 1.4rem; 
+   }
+
+   .c-name, .schl {
+      font-size: 1.2rem; 
+   }
+
+   .my-exp, .study {
+      font-size: 1.2rem; 
+      line-height: 25px;
+   }
+
+   .study{
+      margin-bottom: 50px;
+   }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+ 
+   #left-div, #right-div {
+      padding: 0.5rem;
+box-sizing: border-box;   
+}
+
+#top {
+   width: 100%;
+   height: 1.5rem;
+   margin-bottom: 0.2rem;
+   font-size: 1rem;
+}
+ 
+#left-div {
+   height: auto;
+   width: 40%; 
+   margin-right: 0;
+}
+
+#right-div {
+   height: auto;
+   width: 60%; 
+   margin-left: 0;
+   padding: 20px;
+}
+#img-div{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.img {
+   width: 80%;
+   height: 70%;
+   border: 2px solid black;
+   border-radius: 50%;
+}
+
+#left-div-data{
+   margin-top: 0.7rem;
+width: 100%;
+}
+
+.me, .sk {
+   font-size: 60%; 
+   line-height: 0.7rem;
+   padding: 0.1rem;
+}
+
+.sk{
+   margin-bottom: 1rem;
+   margin-left: 10%;
+   line-height: 1.2rem;
+   font-size: 70%;
+}
+
+
+.fname::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 160%; 
+      height: 5px; 
+      background-color: black;
+    }
+   
+   .fname{
+      font-size: 3.5rem;
+      position: relative;
+      right: 25%;
+   }
+
+   .lname{
+      font-size: 2rem;
+   }
+
+   .contact-me{
+      padding: 0%;
+      font-size: xx-small;
+      width: 100%;
+   }
+  
+   #toggle {
+      width: 100%;
+      border-radius: 20px;
+      font-size: 0.5rem;
+      margin: 20px auto;
+      padding: 2px; 
+   }
+
+   .about, .skill, .contact {
+      font-size: 1rem; 
+      width: 100%;
+      padding: 3px 0;
+      margin-bottom: 0.5rem;
+   }
+
+   .exp, .edu {
+      font-size: 1.6rem; 
+      margin-top: 100px;
+   }
+
+   .edu{
+      margin-top: 10%;
+   }
+   .title, .degree {
+      font-size: 1.4rem; 
+   }
+
+   .c-name, .schl {
+      font-size: 1.2rem; 
+   }
+
+   .my-exp, .study {
+      font-size: 1.2rem; 
+      line-height: 25px;
+   }
+
+   .study{
+      margin-bottom: 50px;
+   }
+
+}
