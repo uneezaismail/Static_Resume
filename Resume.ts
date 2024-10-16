@@ -1,23 +1,9 @@
-let toggleButton = document.getElementById("toggle") as HTMLButtonElement;
-function toggleSkillDiv(): void {
-  const skillDiv = document.getElementById("skill-div");
+const toggleButton = document.querySelector('.toggle-btn') as HTMLButtonElement; 
+const toggleSection = document.querySelector('.toggle-section') as HTMLElement | null;
 
-  if (skillDiv) {
-    if (
-      skillDiv.style.display === "none" ||
-      window.getComputedStyle(skillDiv).display === "none"
-    ) {
-      skillDiv.style.display = "block";
-      toggleButton.innerHTML = '<i class="fa-solid fa-angle-up"></i>';
-    } else {
-      skillDiv.style.display = "none";
-      toggleButton.innerHTML = '<i class="fa-solid fa-angle-down"></i>';
-    }
-
-  }
+if (toggleButton && toggleSection) {
+    toggleButton.addEventListener('click', () => {
+        toggleSection.classList.toggle('show-skills');
+    });
 }
-// #CF9893
-// #CFD2B2
-// #616163
-// #BA5624
-// #DAF5FF
+
